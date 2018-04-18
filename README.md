@@ -72,6 +72,7 @@ export const rootRouterConfig: Routes = [
   { path: 'about', component: AboutComponent }
 ];
 ```
+
 ## Usage for consuming a web api
 1. If you need to call MS Graph API or 3rd party Web API, You need to add your MS Graph API endpoint and resource id to ezcodeadalconfig.ts
 ```typescript
@@ -130,3 +131,11 @@ export class MsgraphService  {
 
 }
 ```
+## Sample solution
+you can find an sample solution from [ezcode-adal-angular5-sample](https://github.com/frankchen76/EZCode-Adal-Angular5-Sample) which was built based on Angular 5 and Bootstrap 4. 
+The application itself was secured by a Azure AD App using implicit authentication flow. "MS Graph" route view is secured by `EZCodeAdalComponentGuard`. 
+If an unauthenticated user accesses this view, the application will redirect to the Azure AD Login page. 
+![alt text](https://public.dm.files.1drv.com/y4maciR4b07TLoQLlEQCi3doLxcDNsFJQbg2a0zGKWWRFJQvN0WWLRGMcVBJFkzLSRdikkCkjG1unDYsYk2cMhRe39-5U1vs8-U9M342TpxkX6vYQy2qZ-o5bgE-1hdH_6k1Mm-JFVxquu09bbYyYVgN_cmrH8sVXeWWWfRZe2uEdHmJlQWuKO1ukGH1Ytv9ZZZ0kIKgTnzn-0ZxKGaqFvtSg/ezcode-adal-angular5-sample.jpg?psid=1)
+
+## Change log
+* 1.0.7: the initial version was released.

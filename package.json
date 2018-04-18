@@ -1,13 +1,14 @@
 {
   "name": "ezcode-adal-angular5",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "author": {
-    "name": "Frank Chen"
+    "name": "Frank Chen",
+    "email": "chentao76@hotmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frankchen76/EZCode-Adal-Angular5.git"
+    "url": "https://github.com/frankchen76/EZCode-Adal-Angular5.git"
   },
   "keywords": [
     "Angular",
@@ -27,7 +28,7 @@
     "inline-build-templates": "gulp inline-build-templates",
     "ngc-build": "./node_modules/.bin/ngc -p ./tsconfig.json",
     "cleardown": "rimraf lib",
-    "prepare": "npm run ngc-build"
+    "prepare": "npm run cleardown && npm run ngc-build"
   },
   "private": false,
   "files": [
