@@ -139,3 +139,4 @@ If an unauthenticated user accesses this view, the application will redirect to 
 
 ## Change log
 * 1.0.7: the initial version was released.
+* 1.0.8: Fixed a issue that Angular Http cannot make a non-auth API .

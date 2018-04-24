@@ -56,6 +56,9 @@ export class EZCodeAdalService {
                         emitter.next(token);
                         emitter.complete();
                     });
+            }else{
+                emitter.next(null);
+                emitter.complete();
             }
         });
     }
