@@ -26,7 +26,7 @@ export class EZCodeHttpInterceptor implements HttpInterceptor {
       return this.auth.getAccessTokenByUrl(req.url)
           .mergeMap(token => {
               const authReq = token==null?req.clone(): req.clone({
-                  headers: req.headers.set('Authorization', "bearer " + token)
+                  headers: req.headers.set('Authorization', "Bearer " + token)
               });
               return next.handle(authReq);
           });

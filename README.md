@@ -163,6 +163,8 @@ If an unauthenticated user accesses this view, the application will redirect to 
 ![alt text](https://public.dm.files.1drv.com/y4maciR4b07TLoQLlEQCi3doLxcDNsFJQbg2a0zGKWWRFJQvN0WWLRGMcVBJFkzLSRdikkCkjG1unDYsYk2cMhRe39-5U1vs8-U9M342TpxkX6vYQy2qZ-o5bgE-1hdH_6k1Mm-JFVxquu09bbYyYVgN_cmrH8sVXeWWWfRZe2uEdHmJlQWuKO1ukGH1Ytv9ZZZ0kIKgTnzn-0ZxKGaqFvtSg/ezcode-adal-angular5-sample.jpg?psid=1)
 
 ## Change log
+* 1.0.10: Fixed the following issues: 
+  * Change "bearer" to "Bearer" for [Http Intercept Set token issue with Power BI RestAPI](https://github.com/frankchen76/EZCode-Adal-Angular5/issues/7). 
 * 1.0.9: Fixed the follwoing issues:
   * Updated to use @types/adal-angular from @types/adal
   * Changed adal-angular loading by using import instead of expose-loader.
